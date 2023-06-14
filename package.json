@@ -1,0 +1,20 @@
+{
+  "name": "new_js_scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "query_dict": "node -r esm -e 'require(\"./src/query_dict.js\")'",
+    "query_dict1": "node -r esm -e 'require(\"./src/query_dict_1.js\")'",
+    "hash": "node -r esm -e 'require(\"./src/hash.js\")'",
+    "array_hash": "node -r esm -e 'require(\"./src/array_hash.js\")'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@noble/hashes": "^1.3.0",
+    "casper-cep78-js-client": "^1.3.0",
+    "casper-js-sdk": "^2.13.0",
+    "esm": "^3.2.25"
+  }
+}
