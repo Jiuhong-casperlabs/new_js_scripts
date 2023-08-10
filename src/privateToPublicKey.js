@@ -1,4 +1,4 @@
-import { Keys } from "casper-js-sdk";
+import { Keys, encodeBase16 } from "casper-js-sdk";
 
 const main = async () => {
   //   public key
@@ -8,12 +8,13 @@ const main = async () => {
   // 26741a39773e31a63559cc73337acf2e8d88d86698a7dfc9a4764a75c97d8b52
 
   const PrivateKey =
-    "1511d3b16356f78d1def7a9d3cd20e946dcbeb9ab1640965084196d1f4c278dc";
+    "26741a39773e31a63559cc73337acf2e8d88d86698a7dfc9a4764a75c97d8b52";
 
   const publickey = Keys.Secp256K1.privateToPublicKey(
     Buffer.from(PrivateKey, "hex")
   );
-  console.log(Buffer.from(publickey).toString("hex"));
+
+  console.log(encodeBase16(publickey));
 };
 
 main();
