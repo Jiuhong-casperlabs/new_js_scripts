@@ -12,7 +12,8 @@
     "balance_erc20": "node -r esm -e 'require(\"./src/balance_erc20.js\")'",
     "allowance_erc20": "node -r esm -e 'require(\"./src/allowance_erc20.js\")'",
     "installcep47": "node -r esm -e 'require(\"./src/installcep47.js\")'",
-    "trandenft": "node -r esm -e 'require(\"./src/trandenft.js\")'"
+    "trandenft": "node -r esm -e 'require(\"./src/trandenft.js\")'",
+    "privateToPublicKey": "node -r esm -e 'require(\"./src/privateToPublicKey.js\")'"
   },
   "author": "",
   "license": "ISC",
